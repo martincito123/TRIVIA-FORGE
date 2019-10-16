@@ -1,0 +1,61 @@
+
+<html>
+<head>
+<title>Conceptos Dynamic Routing</title>
+<script>
+function resultado() {
+var p1, p2, p3, p4, nota;
+
+if (document.getElementById('p11').checked==true) {p1=1}
+else {p1=0}
+
+if (document.getElementById('p22').checked==true) {p2=1}
+else {p2=0}
+
+if (document.getElementById('p33').checked==true) {p3=1}
+else {p3=0}
+
+if (document.getElementById('p44').checked==true) {p4=1}
+else {p4=0}
+ 
+nota=p1+p2+p3+p4;
+alert(" Aciertos: " + nota);
+location.reload();
+}
+</script>
+</head>
+<body>
+<h2>Routing Dinamico - Conceptos basicos</h2>
+<hr>
+<form style="font:normal 16px sans-serif">
+<p>¿Qué protocolo de routing interior utiliza módulos dependientes de protocolo (PDM)? </p>
+<p onclick="this.style.color='#000000'"><input type="radio" name="question1" id="p11"> EIGRP</p>
+<p onclick="this.style.color='#000000'"><input type="radio" name="question1" id="p12"> Sistema intermedio a sistema intermedio (IS-IS)</p>
+<p onclick="this.style.color='#000000'"><input type="radio" name="question1" id="p13"> OSPF</p>
+<p onclick="this.style.color='#000000'"><input type="radio" name="question1" id="p14"> RIP</p>
+ 
+<p>¿Qué técnica para evitar la formación de bucles implementan los protocolos de routing vector distancia?</p>
+<p onclick="this.style.color='#000000'"><input type="radio" name="question2" id="p21"> Protección de bucle </p>
+<p onclick="this.style.color='#000000'"><input type="radio" name="question2" id="p22"> Horizonte dividido </p>
+<p onclick="this.style.color='#000000'"><input type="radio" name="question2" id="p23"> Gateway de último recurso .</p>
+<p onclick="this.style.color='#000000'"><input type="radio" name="question2" id="p24"> Protección de bucle </p>
+ 
+<p>¿Cuál es una de las ventajas de usar OSPF en lugar de RIP?</p>
+<p onclick="this.style.color='#000000'"><input type="radio" name="question3" id="p31"> Menor complejidad </p>
+<p onclick="this.style.color='#000000'"><input type="radio" name="question3" id="p32"> Menos procesamiento de la CPU </p>
+<p onclick="this.style.color='#000000'"><input type="radio" name="question3" id="p33"> Convergencia rápida </p>
+<p onclick="this.style.color='#000000'"><input type="radio" name="question3" id="p34"> Requisitos de poca memoria</p>
+ 
+<p>¿Qué protocolo de routing usa el algoritmo DUAL y envía mensajes de multidifusión para propagar las actualizaciones de routing?</p>
+<p onclick="this.style.color='#000000'"><input type="radio" name="question4" id="p41"> RIPPv2</p>
+<p onclick="this.style.color='#000000'"><input type="radio" name="question4" id="p42"> OSPF</p>
+<p onclick="this.style.color='#000000'"><input type="radio" name="question4" id="p43"> RIPv1</p>
+<p onclick="this.style.color='#000000'"><input type="radio" name="question4" id="p44"> EIGRP</p>
+<hr>
+<p><input type="button" value=" Result " onclick="resultado()"/></p>
+</form>
+
+
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travia</title>
+   
+</head>
+<body>
+
+    <div id="questiOn"></div>
+
+     <script>
+    var questions = [
+    "¿What do you have to consider when you want to create an Etherchannel?",
+    "¿what is the correct order related to the OSI model?",
+    "¿What is the algorhitm that EIGRP use?",
+
+    ];
+    
+    var answers = [
+    ["same number of vlan and same group of etherchannel on both sides","only bandwidth","the frecuency of both switches","The MAC"],
+    ["aplicacion ,sesion ,presentacion,transporte,enlace de datos,fisica","layer1-layer5-layer4-layer3","vtp,stp,fstp,fisica","it doesn´t exist"],
+    ["DUAL (difusing update algorithm)", "dijkstra","Bellman","STP",],
+    ];
+
+    var indice_int = Math.floor(Math.random()*questions.length);
+
+    //Composite Logic
+    var possible_answers = answers[indice_int];
+
+    var text_answers="";
+    for (i in possible_answers){
+        text_answers = "
+
+    }
+
+
+
+    //fIN 
+
+    document.getElementById("questiOn").innerHTML = questions[indice_int];
+
+    </script>
+
+  
+</body>
+</html>
